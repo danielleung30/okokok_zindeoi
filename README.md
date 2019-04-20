@@ -17,7 +17,9 @@ Expected result:
 darth vader (score=0.80737)
 stormtrooper (score=0.19263)
 
-using Google Codelabs
-modify project-- https://github.com/googlecodelabs/tensorflow-for-poets-2
+Using Google Codelabs
+Modify project-- https://github.com/googlecodelabs/tensorflow-for-poets-2
+Full tutorial https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/?utm_campaign=chrome_series_machinelearning_063016&utm_source=gdev&utm_medium=yt-desc#0
+
 
 
