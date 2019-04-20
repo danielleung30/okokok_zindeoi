@@ -1,20 +1,25 @@
-# Overview
 
-This repo contains code for the "TensorFlow for poets 2" series of codelabs.
+<h2>Take a Fucking Look pls</h2>
 
-There are multiple versions of this codelab depending on which version 
-of the tensorflow libraries you plan on using:
+pip3 install tensorflow/ run in anaconda
+ (I don't use shit like Anaconda so I don't know it's work or not.)
+ 
+terminal cd to cloned folder
 
-* For [TensorFlow Lite](https://www.tensorflow.org/mobile/tflite/) the new, ground up rewrite targeted at mobile devices
-  use [this version of the codelab](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets-2-tflite) 
-* For the more mature [TensorFlow Mobile](https://www.tensorflow.org/mobile/mobile_intro) use 
-  [this version of the codealab](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets-2).
+run
+python3 -m scripts.label_image \
+    --graph=tf_files/retrained_graph_star_wars.pb  \
+    --label=tf_files/retrained_labels_star_wars.txt \
+    --image=tf_files/star_wars/darth_vader/test.jpeg(or whatever darth varder/stormtrooper picture,only accept jpeg,png,gif)
+
+Expected result:
+
+darth vader (score=0.80737)
+stormtrooper (score=0.19263)
+
+Using Google Codelabs
+Modify project-- https://github.com/googlecodelabs/tensorflow-for-poets-2
+Full tutorial https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/?utm_campaign=chrome_series_machinelearning_063016&utm_source=gdev&utm_medium=yt-desc#0
 
 
-This repo contains simplified and trimmed down version of tensorflow's example image classification apps.
-
-* The TensorFlow Lite version, in `android/tflite`, comes from [tensorflow/contrib/lite/](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/lite).
-* The Tensorflow Mobile version, in `android/tfmobile`, comes from [tensorflow/examples/android/](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android).
-
-The `scripts` directory contains helpers for the codelab. Some of these come from the main TensorFlow repository, and are included here so you can use them without also downloading the main TensorFlow repo (they are not part of the TensorFlow `pip` installation).
 
